@@ -1,11 +1,10 @@
 
 #!/usr/bin/python3
 
-""" Log parser project """
+""" Log parser ALX project """
 
 
 import sys
-
 import re
 
 
