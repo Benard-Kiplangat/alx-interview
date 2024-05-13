@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """
-UTF-8 validator
+Determines if given data represents valid utf8.
 """
 
+
 def validUTF8(data):
-   """
-   a guntion that validates if a given set of numbers is a valid utf8
-   """
+    """
+    Return true if data is valid utf with chars 1-4 bytes long,
+    data set can ontain multiple chars data will be represented by a list of ints,
+    each int reps 1 byteof data, only need to handle the 8 least significant bits
+    of each integer.
+    """
 
-
-   num_bytes = 0
+    num_bytes = 0
 
     for number in data:
         binary_result = format(number, '#010b')[-8:]
