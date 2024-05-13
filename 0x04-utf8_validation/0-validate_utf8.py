@@ -4,6 +4,11 @@ UTF-8 validator
 """
 
 def validUTF8(data):
+   """
+   a guntion that validates if a given set of numbers is a valid utf8
+   """
+
+
    num_bytes = 0
 
     for number in data:
