@@ -17,7 +17,7 @@ if (process.argv.length > 2) {
                 resolve(JSON.parse(charactersReqBody).name);
         });
       }));
-      promise.all(nameCharacters).then(names => console.log(names.join('\n')))
+      Promise.all(nameCharacters).then(names => console.log(names.join('\n')))
       .catch(allErr => console.log(allErr));
   });
 }
