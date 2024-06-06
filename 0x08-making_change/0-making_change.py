@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A script that calculates the minimal amount of change"""
 
+
 def makeChange(coins, total):
     """The makeChange function to calculate the number of coins
         Args:
@@ -19,11 +20,11 @@ def makeChange(coins, total):
 
     for i in coins:
         while amountChecked < total:
-            amountChecked = amountChecked + i;
+            amountChecked = amountChecked + i
             numberCoins = numberCoins + 1
         if amountChecked == total:
             return numberCoins
-        amountChecked = amountChecked - 1
+        amountChecked = amountChecked - i
         numberCoins = numberCoins - 1
 
     return -1
