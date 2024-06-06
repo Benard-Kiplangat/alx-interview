@@ -20,10 +20,10 @@ def makeChange(coins, total):
     for i in coins:
         while amountChecked < total:
             amountChecked = amountChecked + i;
-            numberCoins++
+            numberCoins = numberCoins + 1
         if amountChecked == total:
             return numberCoins
-        amountChecked--
-        numberCoins--
+        amountChecked = amountChecked - 1
+        numberCoins = numberCoins - 1
 
     return -1
