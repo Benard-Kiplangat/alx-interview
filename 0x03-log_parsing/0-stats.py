@@ -1,7 +1,7 @@
 
 #!/usr/bin/python3
 
-""" Log parser ALX project """
+""" Log parser ALX interview project """
 
 
 import sys
